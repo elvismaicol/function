@@ -33,6 +33,11 @@ public class Product {
     public static String staticUpperCaseName(Product p) {
         return p.getName().toUpperCase();
     }
+    
+    //Reference method com método não estático
+    public String nonStaticUpperCaseName() {
+        return name.toUpperCase();
+    }
 
     @Override
     public String toString() {
